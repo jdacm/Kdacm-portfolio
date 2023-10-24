@@ -1,0 +1,466 @@
+  <!doctype html>
+  <html lang="en" class="h-100" data-bs-theme="auto">
+    <head><script src="../assets/js/color-modes.js"></script>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="">
+      <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+      <meta name="generator" content="Hugo 0.118.2">
+      <title>Portfolio | KDACM</title>
+
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/cover/">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="cover.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="try.js"></script>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+     
+    </head>
+
+  <body class="h-100">
+      <div id="particles-js"></div>
+
+  <div id="home" class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    
+    <div class="scroll-button">
+      <a href="#about" class="scroll-btn ">
+        <i class="fa-solid fa-computer-mouse-scrollwheel fa-bounce"></i>
+      </a>
+    </div>
+    
+    <header class="mb-100">
+      <div class="container-div">
+        <h3 class="position-fixed mb-0 mt-0 text-white fw-bold">PORT<span class=""><font color="#1f51ff">FOLIO</font-color></span> </h3>
+        <div class="menu-container">
+          <div id="menu-icon" class="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <nav class="nav fw-bold position-fixed">
+            <div class="nav-a">
+            <a class="nav-link py-1 px-0 text-white" aria-current="page" href="#home">Home</a>
+            </div>
+            <div class="nav-a">
+            <a class="nav-link py-1 px-0 text-white" href="#about">About</a>
+            </div>
+            <div class="nav-a">
+            <a class="nav-link py-1 px-0 text-white" href="#pf">Portfolio</a>
+            </div>
+            <div class="nav-a">
+            <a class="nav-link py-1 px-0 text-white" href="#contact">Contact</a>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="sidebar">
+      <div class="close-icon" id="close-sidebar">✕</div><br><br>
+      <nav>
+        <a class="nav-link py-1 px-0 text-white" aria-current="page" href="#">Home</a>
+        <a class="nav-link py-1 px-0 text-white" href="#">About</a>
+        <a class="nav-link py-1 px-0 text-white" href="#pf">Portfolio</a>
+        <a class="nav-link py-1 px-0 text-white" href="#">Contact</a>
+      </nav>
+    </div>
+    <div class="sidebar-overlay"></div>
+
+    <main class="px-3 h-100 w-50 text-left">
+      <div class="main-container">
+        <h1 class="text-white fw-bold">Hi! I'm Kevin Dacpano.</h1>
+
+        <p class="lead text-warning fw-bold">
+          <span id="typewriterStatic">I am a </span><span id="typewriter"></span>
+        </p>
+        
+        <script>
+          const staticText = "I am a "; // The static text that doesn't change
+          const textArray = ["Freelance Front-End Developer", "Web Designer", "UI/UX Designer"]; // Array of text to display
+          const speed = 100; // Speed of typing (in milliseconds)
+          const typewriterStatic = document.getElementById('typewriterStatic');
+          const typewriter = document.getElementById('typewriter');
+          let textIndex = 0; // Index to keep track of the current text
+          let charIndex = 0; // Index to keep track of the current character
+        
+          function typeWriter() {
+            if (charIndex < textArray[textIndex].length) {
+              typewriter.innerHTML += textArray[textIndex].charAt(charIndex);
+              charIndex++;
+              setTimeout(typeWriter, speed);
+            } else {
+              setTimeout(eraseText, 1000); // Delay before erasing
+            }
+          }
+        
+          function eraseText() {
+            if (typewriter.innerHTML.length > 0) {
+              typewriter.innerHTML = typewriter.innerHTML.slice(0, -1);
+              setTimeout(eraseText, speed);
+            } else {
+              textIndex = (textIndex + 1) % textArray.length; // Move to the next text in a loop
+              charIndex = 0;
+              setTimeout(typeWriter, 1000); // Delay before starting the next text
+            }
+          }
+        
+          typewriterStatic.textContent = staticText; // Set the static text
+          window.addEventListener("load", typeWriter);
+        </script>
+        
+        
+        
+        
+         
+        <p class="lead text-white">A Front-End focused Web Developer building the Interface of Websites that leads to the success of the overall product.</p>
+        <div class="socials">
+          <p class="lead d-flex align-items-center">
+            <span class="ms-3">
+              <a href="https://www.facebook.com/jake.dacpano.5/" target="_blank" class="text-white me-3" style="font-size: 40px; width: 40px; height: 40px;">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="https://www.instagram.com/kevindacpano/" target="_blank" class="text-white" style="font-size: 40px; width: 40px; height: 40px;">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </span>
+          </p>
+        </div>
+
+        <div class="contact-button">
+          <a href="#contact" class="btn btn-lg btn-light fw-bold ">Let's Talk</a>
+        </div>
+  
+        
+        
+        
+      </div>
+    </main>
+  </div>
+
+  <div id="about" class="paddsection">
+    <div class="about-header text-center"> <!-- Added header div -->
+      <h2 class="section-header">About Me!!</h2> <!-- Header content -->
+    </div>
+    <div class="container1">
+      <div class="row justify-content-between">
+        <!-- Part 1: Image -->
+        <div class="col-lg-4">
+          <div class="div-img-bg">
+            <div class="about-img">
+              <img src="images/pic/me.PNG" class="img-fluid" alt="me">
+            </div>
+          </div>
+        </div>
+    
+        <!-- Part 2: Contact Information -->
+        <div class="col-lg-4">
+          <div class="about-descr">
+            <h2>Contact Information</h2>
+            <p><strong>Email:</strong> jakedacmarq@gmail.com</p>
+            <p><strong>Phone:</strong> +639512814920</p>
+            <p><strong>Address:</strong> AGOO, LA UNION</p>
+          </div>
+        </div>
+    
+        <!-- Part 3: Skills -->
+        <div class="col-lg-4">
+          <div class="about-descr">
+            <h2>Skills</h2>
+            <!-- Skill 1 -->
+            <div class="skill">
+              <p>Front-End Development</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 80%;">80%</div>
+              </div>
+            </div>
+  
+            <!-- Skill 2 -->
+            <div class="skill">
+              <p>HTML, CSS, JavaScript</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: 90%;">90%</div>
+              </div>
+            </div>
+  
+            <!-- Add more skills as needed -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+  <div id="pf">
+    <div class="pf-h1 text-center">
+      <h1 class="section-title">My Portfolio</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div id="myCarousel" class="carousel slide shadow-lg" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                <img src="images/project/PortfolioV1.PNG" alt="">
+                <div class="carousel-caption">
+                  <h3>Great Design</h3>
+                  </div>
+              </div>	
+              <div class="item">
+                <img src="images/project/Project1.PNG" alt="">
+                <div class="carousel-caption">
+                  <h3>Mobile Friendly</h3>							
+                  </div>
+              </div>
+              <div class="item">
+                <img src="images/project/RBS - MP1.png" alt="">
+                <div class="carousel-caption">
+                  <h3>Functional Website</h3>							
+                  </div>
+              </div>
+            </div>
+            <ul class="nav nav-pills nav-justified">
+              <li data-target="#myCarousel" data-slide-to="0" class="nav-item active"><a href="#"><strong>Portfolio</strong>My First Portfolio</a></li>
+              <li data-target="#myCarousel" data-slide-to="1" class="nav-item"><a href="#"><strong>Creative Ally</strong>First Web Project Using Grid & Flex</a></li>
+              <li data-target="#myCarousel" data-slide-to="2" class="nav-item"><a href="#"><strong>RBS | Circadian Health</strong>Mini-Project 1</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="ftco-section">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-5">
+          <h2 class="heading-section">GET IN TOUCH</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="wrapper">
+            <div class="row no-gutters">
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="contact-wrap w-100 p-md-5 p-4 py-5">
+                  <h3 class="mb-4">Write us</h3>
+                  <div id="form-message-warning" class="mb-4"></div> 
+                  <div id="form-message-success" class="mb-4">
+                    Your message was sent, thank you!
+                  </div>
+                  <form method="POST" id="contactForm" name="contactForm" class="contactForm">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="name" id="name" placeholder="Name">
+                        </div>
+                      </div>
+                      <div class="col-md-12"> 
+                        <div class="form-group">
+                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <input type="submit" value="Send Message" class="btn btn-primary">
+                          <div class="submitting"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6 d-flex align-items-stretch">
+                <div class="info-wrap w-100 p-md-5 p-4 py-5 img">
+                  <h3>Contact information</h3>
+                  <p class="mb-4">We're open for any suggestion or just to have a chat</p>
+                  <div class="dbox w-100 d-flex align-items-start">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                      <span class="fa fa-map-marker"></span>
+                    </div>
+                    <div class="text pl-3 dbox-p">
+                      <p><span>Address:</span> AGOO, LA UNION</p>
+                    </div>
+                  </div>
+                  <div class="dbox w-100 d-flex align-items-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                      <span class="fa fa-phone"></span>
+                    </div>
+                    <div class="text pl-3">
+                      <p><span>Phone:</span> <a href="tel://1234567920">+639512814920</a></p>
+                    </div>
+                  </div>
+                  <div class="dbox w-100 d-flex align-items-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                      <span class="fa fa-paper-plane"></span>
+                    </div>
+                    <div class="text pl-3">
+                      <p><span>Email:</span> <a href="mailto:info@yoursite.com">jakedacmarq@gmail.com</a></p>
+                    </div>
+                  </div>
+                  <div class="dbox w-100 d-flex align-items-center">
+                    <div class="icon d-flex align-items-center justify-content-center">
+                      <span class="fa fa-globe"></span>
+                    </div>
+                    <div class="text pl-3">
+                      <p><span>Website</span> <a href="#">NONE</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="footer" class="text-center">
+    <div class="container">
+      <div class="socials-media text-center">
+
+        <ul class="list-unstyled">
+          <li><a href="https://www.facebook.com/jake.dacpano.5/"><i class="bi bi-facebook"></i></a></li>
+          <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/kevindacpano/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+        </ul>
+
+      </div>
+
+      <p>&copy; Copyrights 2023. All rights reserved.</p>
+
+    </div>
+  </div>
+  <script src="particles.js"></script>
+  <script>
+    particlesJS("home", {
+      "particles": {
+      "number": {
+        "value": 250,
+        "density": {
+          "enable": true,
+          "value_area": 1000
+        }
+      },
+      "color": {
+        "value": ["#ff0000", "#00ff00", "#0000ff"]
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+  </script>
+  
+  </body>
+  </html>
