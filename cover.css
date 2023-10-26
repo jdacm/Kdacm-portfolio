@@ -220,6 +220,7 @@ html {
   height: 50px;
   width: -webkit-fill-available;
   margin-top: 0%;
+	margin-left: 10px;
 }
 
 .menu-container.scrolled {
