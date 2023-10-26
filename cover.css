@@ -352,6 +352,7 @@ body {
 
 .container-div h3 {
   z-index: 100;
+	margin-left: 10px;
 }
 
 .nav-masthead .nav-link {
