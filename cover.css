@@ -268,7 +268,7 @@ html {
 
 @media (max-width: 520px) {
   .main-container {
-    margin-left: 5px;
+    margin-left: 10px;
     width: 200px;
     height: auto;
     padding-top: 50px;
