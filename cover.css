@@ -3,7 +3,6 @@
 * {
   font-family: Montserrat;
 }
-
 .particles-js {
   position: fixed;
   top: 0;
@@ -330,12 +329,13 @@ body {
 }
 
 .main-container {
-  margin-top: 35%;
+  margin-top: 20%;
   text-align: left;
 }
 
 .cover-container {
-  max-width: 90em;
+  max-width: 98%;
+  max-height: 100%;
 }
 
 .container-div nav {
